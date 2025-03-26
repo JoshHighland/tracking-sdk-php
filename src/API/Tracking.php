@@ -65,7 +65,7 @@ class Tracking extends APIBase
     */
     public function getTrackingById(
         string $id,
-        GetTrackingByIdQuery $query = null,
+        ?GetTrackingByIdQuery $query = null,
         array $headers = []
     ): \Tracking\API\Tracking\GetTrackingByIdResponse {
         if ($id === "") {
