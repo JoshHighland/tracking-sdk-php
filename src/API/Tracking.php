@@ -123,7 +123,7 @@ class Tracking extends APIBase
     * @throws AfterShipError
     */
     public function getTrackings(
-        GetTrackingsQuery $query = null,
+        ?GetTrackingsQuery $query = null,
         array $headers = []
     ): \Tracking\API\Tracking\GetTrackingsResponse {
         $options = [
